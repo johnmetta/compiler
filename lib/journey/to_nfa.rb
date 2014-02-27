@@ -1,7 +1,7 @@
-require 'journey/definition/node'
+require 'journey/visitors'
 
 module Journey
-  class ToNFA < Journey::Definition::Node::Visitor
+  class ToNFA < Journey::Visitors::Visitor
     def initialize
       @index = -1
     end

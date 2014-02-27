@@ -1,4 +1,4 @@
-require 'journey/definition/node'
+require 'journey/visitors'
 
 module Journey
   module Definition
@@ -10,7 +10,7 @@ module Journey
       end
     end
   end
-class RouteGraph < Journey::Definition::Node::Visitor
+class RouteGraph < Journey::Visitors::Visitor
   def initialize
     @nodes = []
     @edges = []

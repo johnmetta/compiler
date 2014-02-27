@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 require 'compiler/nfa'
-require 'journey/definition/parser'
+require 'journey/parser'
 require 'journey/to_nfa'
 require 'journey/ast_graph'
 
